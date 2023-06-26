@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { useCookies } from 'react-cookie'
+import '../CampingList.css';
+
 
 
 const Modal = ({mode, setShowModal, getData, task}) => {
@@ -46,7 +48,7 @@ const Modal = ({mode, setShowModal, getData, task}) => {
             <div className='modal'>
                 <div className='form-title-container'>
                     <h3> Let's {mode} your list</h3>
-                    <button onClick={() => setShowModal(false)}>X</button>
+                    <button className='close' onClick={() => setShowModal(false)}>X</button>
                 </div>
                 <form>
                     <input
@@ -58,9 +60,8 @@ const Modal = ({mode, setShowModal, getData, task}) => {
                         onChange={handleChange}
                     />
                     <br/>
-                    <input className={mode} type='submit' onClick={editMode ? '' : postData}/>
+                    <input className='submit' type='submit' onClick={editMode ? '' : postData}/>
                 </form>
-
             </div>
         </div>
     )

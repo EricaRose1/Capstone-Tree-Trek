@@ -35,6 +35,7 @@ function SearchBar() {
             <input className='SearchBar' 
                     type='text'
                     value={searchTerm}
+                    placeholder='Search for park here'
                     onChange={event => setSearchTerm(event.target.value)}
                     />
             <button className='SubmitBtn' 

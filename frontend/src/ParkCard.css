@@ -15,10 +15,10 @@ ul.ParkList {
   border-radius: 25px;
   text-align: center;
 }
-
+/* 
 html {
   background-color: #f8e3ba;
-}
+} */
 
 h1 {
   text-align: center;
@@ -50,4 +50,10 @@ a {
 
 .ParkName {
   font-weight: bold;
+}
+
+form {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }

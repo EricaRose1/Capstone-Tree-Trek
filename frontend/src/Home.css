@@ -15,16 +15,22 @@ header {
   z-index: -1;
 }
 
+.bkground {
+  transform: translatez(-15px) scale(1.3);
+}
+
 .birds {
-  transform: translatez(-25px) scale(2);
+  transform: translatez(-15px) scale(2);
 }
 
 .foreground {
-  transform: translatez(-5px) scale(1.5);
+  transform: translatez(-8px) scale(1.8);
 }
 
-h1 {
-  transform: translatez(-12px) scale(1.3);
+.title {
+  position: fixed;
+  top: 10px;
+  transform: translatez(-13px) scale(1.5);
 }
 
 p {
@@ -52,4 +58,13 @@ section {
   text-align: center;
   font-size: 2rem;
   padding: 2rem;
+}
+
+.welcome-section {
+  font-family: "Love Ya Like A Sister", sans-serif;
+}
+
+h2 {
+  font-size: 25px;
+  padding-bottom: 0px;
 }

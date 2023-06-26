@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios';
 import NavBar from './NavBar';
 import SearchBar from './SearchBar';
@@ -10,6 +10,7 @@ function ParkCard() {
     const [parkData, setParkData] = useState([])
     const [parkName, setParkName] = useState([{}])
     const [parkContact, setParkContact] = useState([])
+    const nav = useNavigate();
 
     useEffect(() => {
         const options = {
@@ -25,7 +26,7 @@ function ParkCard() {
             console.error(error)
         })
     }, [])
-
+    
 
     return(
         
@@ -35,8 +36,8 @@ function ParkCard() {
             
 
             <h1>Parks List</h1>
-            
-            
+             <SearchBar />
+            <button className="BackBtn" onClick={() => nav(-1)}>Back</button>
             {parkData && <p className='Total'>There are a total of {parkData.total} National Parks</p>}
             {parkName.map((park, index) => (
                 <div key={index}>
@@ -56,7 +57,7 @@ function ParkCard() {
                 </div>
             ))}
             {/* <button onClick='/parks'>Get Parks</button> */}
-                 <SearchBar />
+                
         </div>
     )
 }

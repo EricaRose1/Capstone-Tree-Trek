@@ -13,7 +13,7 @@ function NavBar() {
     const signout = () => {
         removeCookie('Email')
         removeCookie('AuthToken')
-        let path = '/home'
+        let path = '/'
         nav(path)
         // window.location.reload()
     }
@@ -30,7 +30,7 @@ function NavBar() {
                 
             </ul>
             <button className='SignOut' onClick={signout} >Sign Out</button>
-            <button className="BackBtn" onClick={() => nav(-1)}>Back</button>
+            
         </div>
     )
 }

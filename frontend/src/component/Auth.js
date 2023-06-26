@@ -45,8 +45,8 @@ const Auth = () => {
     return (
         <div className='Auth-container'>
             <div>
-                <form>
-                    <h2>{isLogIn ? 'please login' : 'please sign up'}</h2>
+                <form className='login-Signup'>
+                    <h2>{isLogIn ? 'Please Login' : ' Sign Up'}</h2>
                     <input
                         type='email'
                         placeholder='Email'
@@ -62,9 +62,9 @@ const Auth = () => {
                                     placeholder="confirm password"
                                     onChange={(e) => setConfirmPassword(e.target.value)}
                     />}
-                    <input type='submit'
+                    <button type='submit'
                             className='create'
-                            onClick={(e) => handleSubmit(e, isLogIn ? 'login' : 'signup')}/>
+                            onClick={(e) => handleSubmit(e, isLogIn ? 'login' : 'signup')}>Submit</button>
                             {error && <p>{error}</p>}
                 </form>
                 <div className='auth-options'>

@@ -19,11 +19,12 @@ const ListItem = ({task, getData}) => {
     return (
         <div className='list-item'>
             <div className='info-container'>
-                <p className='task-title'>{task.title}</p>
+                <p className='task'>{task.title}</p>
+                <button className='task' onClick={deleteItem}>Delete</button>
             </div>
-            <div className='button-container'>
-                <button className='delete' onClick={deleteItem}>Delete</button>
-            </div>
+            
+                
+            
             {showModal && <Modal  setShowModal={setShowModal} getData={getData} task={task}/>}
         </div>
         // mode={'edit'} added in Modal
