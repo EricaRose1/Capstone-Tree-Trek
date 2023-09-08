@@ -1,0 +1,15 @@
+ul.navbar {
+  margin-top: 0;
+  text-align: center;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  font-family: "Love Ya Like A Sister", sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  color: #eaa534;
+  font-weight: 500;
+  font-size: 25px;
+}
