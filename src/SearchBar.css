@@ -1,0 +1,22 @@
+.SearchBarContainer {
+  align-items: center;
+}
+
+.SearchBar {
+  text-align: center;
+  opacity: 0.5;
+  width: 18vw;
+  border: 2px solid black;
+  border-radius: 35px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.ParkList {
+  align-items: center;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
